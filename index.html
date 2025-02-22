@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dribbble by Jean</title>
+
+    <!-- Enlaces a hojas de estilo y fuentes -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/logo-.jpg" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome para íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Encabezado de la página -->
+    <header class="encabezado">
+      <nav class="navegacion contenedor">
+        <!-- Logo -->
+        <a href="index.html" class="logo"
+          ><img src="img/logo-dribbble.png" alt="Logotipo de Dribbble"
+        /></a>
+
+        <!-- Menú de navegación -->
+        <ul class="menu">
+          <li class="submenu">
+            <a href="#">Explorar</a>
+            <!-- Submenú de Explorar -->
+            <ul class="submenu-lista">
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Reciente</a></li>
+              <li><a href="#">Siguiendo</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a href="#">Contratar un Diseñador</a>
+            <!-- Submenú de Contratar un Diseñador -->
+            <ul class="submenu-lista">
+              <li><a href="#">Freelancers</a></li>
+              <li><a href="#">Agencias</a></li>
+              <li><a href="#">Proyectos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Buscar Empleo</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+        <!-- Botones de autenticación -->
+        <div class="autenticacion">
+          <a href="#" class="ingreso">Registrarse</a>
+          <a href="#" class="registro">Iniciar Sesión</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+      <!-- Sección de presentación -->
+      <section class="presentacion">
+        <h1>Descubre a los mejores diseñadores del mundo</h1>
+        <p>
+          Explora el trabajo de los diseñadores más talentosos y experimentados
+          listos para tu próximo proyecto.
+        </p>
+
+        <!-- Barra de búsqueda -->
+        <div class="buscador">
+          <input type="text" placeholder="¿Qué estás buscando?" />
+          <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!-- Tendencias de búsqueda -->
+        <div class="tendencias">
+          <span>Búsquedas populares:</span>
+          <a href="#">Landing page</a>
+          <a href="#">E-commerce</a>
+          <a href="#">Aplicaciones móviles</a>
+          <a href="#">Diseño de logos</a>
+          <a href="#">Dashboard</a>
+          <a href="#">Íconos</a>
+        </div>
+      </section>
+
+      <!-- Sección de filtros -->
+      <section class="filtros">
+        <button class="boton-filtro">Popular</button>
+        <button class="boton-filtro activo">Descubrir</button>
+        <button class="boton-filtro">Animación</button>
+        <button class="boton-filtro">Branding</button>
+        <button class="boton-filtro">Ilustración</button>
+        <button class="boton-filtro">Móvil</button>
+        <button class="boton-filtro">Impresión</button>
+        <button class="boton-filtro">Diseño de producto</button>
+        <button class="boton-filtro">Tipografía</button>
+        <button class="boton-filtro">Diseño web</button>
+        <button class="icono-filtro fa-solid fa-filter"></button>
+      </section>
+
+      <!-- Galería de imágenes -->
+      <section class="galeria">
+        <div class="rejilla">
+          <!-- Elemento 1 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-9.jpg" alt="Ejemplo 1" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Samuel Molina</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 11.2k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 32.5k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 2 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-2.png" alt="Ejemplo 2" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-ninja"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Jorge Colindres</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 25.2k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 31.5k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 3 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-3.jpg" alt="Ejemplo 3" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-tie"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Byron Ramírez</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 18.4k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 22.9k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 4 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-4.jpg" alt="Ejemplo 4" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Osmar Tobar</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 41.2k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 50.5k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 5 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-5.jpg" alt="Ejemplo 5" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-ninja"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Héctor Zamora</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 1.5k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 21.3k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 6 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-6.jpg" alt="Ejemplo 6" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-tie"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Luz Yessenia</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 14.5k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 82.5k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 7 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-10.png" alt="Ejemplo 7" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Dania Amado</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 17.7k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 24.9k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemento 8 -->
+          <div class="elemento-rejilla">
+            <img src="img/template-9.jpg" alt="Ejemplo 8" />
+            <div class="info-imagen">
+              <div class="autor">
+                <i class="fa-solid fa-user-ninja"></i>
+                <!-- Ícono de avatar -->
+                <span class="nombre-autor">Jean Portillo</span>
+              </div>
+              <div class="acciones">
+                <button class="like">
+                  <i class="fas fa-heart"></i> 51.2k
+                </button>
+                <span class="views"><i class="fas fa-eye"></i> 53.5k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer de la página -->
+      <footer class="footer">
+        <!-- Botón "Sign up to continue" -->
+        <div class="signup-container">
+          <button class="signup-button">Regístrate para continuar</button>
+        </div>
+
+        <!-- Carrusel de fotografías -->
+        <div class="carousel">
+          <div class="carousel-inner">
+            <img src="img/template-3.jpg" alt="Carousel 1" />
+            <img src="img/template-2.png" alt="Carousel 2" />
+            <img src="img/template-6.jpg" alt="Carousel 3" />
+            <img src="img/template-5.jpg" alt="Carousel 4" />
+            <img src="img/template-3.jpg" alt="Carousel 1" />
+            <!-- Efecto de Bucle -->
+            <img src="img/template-2.png" alt="Carousel 2" />
+            <img src="img/template-6.jpg" alt="Carousel 3" />
+            <img src="img/template-5.jpg" alt="Carousel 4" />
+          </div>
+        </div>
+
+        <!-- Sección de enlaces y redes sociales -->
+        <div class="footer-links contenedor">
+          <!-- Logo -->
+          <div class="footer-section">
+            <a href="index.html"
+              ><img
+                src="img/logo-dribbble.png"
+                alt="Dribbble Logo"
+                class="footer-logo"
+            /></a>
+          </div>
+
+          <!-- Enlaces -->
+          <div class="footer-section">
+            <h4><a href="#">Para diseñadores</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Contratar talento</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Inspiración</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Promoción</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Blog</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Acerca de</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Carreras</a></h4>
+          </div>
+          <div class="footer-section">
+            <h4><a href="#">Soporte</a></h4>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="footer-section social-media">
+            <a href="https://x.com/dribbble"
+              ><img src="img/x-icon.jpeg" alt="Twitter"
+            /></a>
+            <a href="https://www.facebook.com/dribbble"
+              ><img src="img/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="https://www.instagram.com/dribbble"
+              ><img src="img/insta-icon.png" alt="Instagram"
+            /></a>
+            <a href="https://www.pinterest.com/dribbble/"
+              ><img src="img/pinterest-icon.png" alt="Pinterest"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Términos y enlaces adicionales -->
+        <div class="footer-bottom contenedor">
+          <div class="footer-left">
+            <span> &copy; 2025 Dribbble</span>
+            <a href="#">Términos</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div class="footer-right">
+            <a href="#">Trabajos</a>
+            <a href="#">Diseñadores</a>
+            <a href="#">Independientes</a>
+            <a href="#">Etiquetas</a>
+            <a href="#">Lugares</a>
+            <a href="#">Recursos</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

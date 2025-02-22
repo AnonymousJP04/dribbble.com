@@ -1,0 +1,463 @@
+/* Estilos generales */
+body {
+  font-family: 'Inter', sans-serif; /* Fuente principal */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el padding predeterminado */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+  background-color: #f9f9f9; /* Color de fondo de la página */
+  color: #333; /* Color de texto principal */
+}
+
+.contenedor {
+  width: 90%; /* Ancho del contenedor principal */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: #fff; /* Fondo blanco para el encabezado */
+  padding: 1rem 0; /* Espaciado interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: sticky; /* Fija el encabezado en la parte superior */
+  top: 0;
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between; /* Espacio entre el logo y el menú */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo img {
+  width: 125px; /* Ancho del logo */
+  height: 50px; /* Altura del logo */
+}
+
+.menu {
+  list-style: none; /* Elimina los estilos de lista predeterminados */
+  display: flex;
+  gap: 1.5rem; /* Espacio entre elementos del menú */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #333; /* Color del texto del menú */
+  font-weight: 500; /* Grosor de la fuente */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.menu li {
+  position: relative; /* Posicionamiento relativo para el submenú */
+}
+
+.submenu-lista {
+  display: none; /* Oculta el submenú por defecto */
+  position: absolute;
+  top: 100%; /* Posiciona el submenú debajo del elemento del menú */
+  left: 0;
+  background-color: #fff; /* Fondo blanco para el submenú */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  list-style: none;
+  padding: 0.5rem 0; /* Espaciado interno */
+  margin: 0;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.submenu:hover .submenu-lista {
+  display: block; /* Muestra el submenú al hacer hover */
+}
+
+.submenu-lista li {
+  padding: 0.5rem 1rem; /* Espaciado interno para los elementos del submenú */
+}
+
+.submenu-lista li:hover {
+  background-color: #f5f5f5; /* Cambia el fondo al hacer hover */
+}
+
+.autenticacion {
+  display: flex;
+  gap: 1rem; /* Espacio entre los botones de registro e ingreso */
+}
+
+.registro, .ingreso {
+  text-decoration: none;
+  color: #000; /* Color del texto */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 24px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.registro {
+  background-color: black; /* Fondo negro para el botón de registro */
+  color: #fff; /* Texto blanco */
+}
+
+.registro:hover {
+  background-color: #d6427a; /* Cambia el fondo al hacer hover */
+}
+
+.ingreso:hover {
+  background-color: #f5f5f5; /* Cambia el fondo al hacer hover */
+}
+
+/* Presentación */
+.presentacion {
+  text-align: center; /* Centra el texto */
+  padding: 4rem 0; /* Espaciado interno */
+}
+
+.presentacion h1 {
+  font-size: 2.5rem; /* Tamaño de la fuente */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  color: #333; /* Color del texto */
+}
+
+.presentacion p {
+  font-size: 1.2rem; /* Tamaño de la fuente */
+  color: #666; /* Color del texto */
+  margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+.presentacion img {
+  width: 100%; /* Ancho completo */
+  max-width: 20px; /* Ancho máximo */
+  height: auto; /* Altura automática */
+  border-radius: 48px; /* Bordes redondeados */
+}
+
+.buscador {
+  display: flex;
+  justify-content: center; /* Centra el buscador */
+  border-radius: 500px; /* Bordes redondeados */
+  margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+.buscador input {
+  background-color: #eeecec; /* Fondo del input */
+  padding: 0.75rem; /* Espaciado interno */
+  width: 400px; /* Ancho del input */
+  border: 1px solid #ccc; /* Borde del input */
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de la fuente */
+  outline: none; /* Elimina el contorno al hacer focus */
+}
+
+.buscador button {
+  background-color: #ea4c89; /* Fondo del botón */
+  border: none; /* Elimina el borde */
+  padding: 0.75rem 1.5rem; /* Espaciado interno */
+  border-radius: 50px; /* Bordes redondeados */
+  margin-left: 0.5rem; /* Espaciado izquierdo */
+  cursor: pointer; /* Cambia el cursor al hacer hover */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.buscador button:hover {
+  background-color: #d6427a; /* Cambia el fondo al hacer hover */
+}
+
+.tendencias {
+  display: flex;
+  gap: 1rem; /* Espacio entre elementos */
+  justify-content: center; /* Centra los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.tendencias a {
+  background-color: rgb(228, 223, 223); /* Fondo de los enlaces */
+  color: black; /* Color del texto */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  text-decoration: none; /* Elimina el subrayado */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.tendencias a:hover {
+  background-color: #f9f9f9; /* Cambia el fondo al hacer hover */
+  border-color: #afa9a9; /* Cambia el color del borde al hacer hover */
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  justify-content: center; /* Centra los botones de filtro */
+  gap: 1rem; /* Espacio entre botones */
+  padding: 1rem 0; /* Espaciado interno */
+  flex-wrap: wrap; /* Permite que los botones se envuelvan */
+}
+
+.boton-filtro {
+  background-color: #f9f9f9; /* Fondo de los botones */
+  border: 1px solid #f9f9f9; /* Borde de los botones */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al hacer hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.boton-filtro.activo {
+  background-color: #dad6d6a3; /* Fondo del botón activo */
+  color: black; /* Color del texto */
+  border-color: #f9f9f9; /* Borde del botón activo */
+}
+
+.boton-filtro:hover {
+  color: rgb(130, 129, 129); /* Cambia el color del texto al hacer hover */
+}
+
+.icono-filtro {
+  background-color: #fff; /* Fondo del ícono de filtro */
+  border: 1px solid #ccc; /* Borde del ícono */
+  padding: 0.5rem; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al hacer hover */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.icono-filtro:hover {
+  background-color: #f5f5f5; /* Cambia el fondo al hacer hover */
+}
+
+/* Estilos para la galería */
+.galeria {
+  padding: 2rem 0; /* Espaciado interno */
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+  gap: 1.5rem; /* Espacio entre elementos */
+}
+
+.elemento-rejilla {
+  background-color: #fff; /* Fondo de los elementos de la galería */
+  border-radius: 12px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que sobresale */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  display: flex;
+  flex-direction: column; /* Organiza el contenido en columna */
+}
+
+.elemento-rejilla:hover {
+  transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.elemento-rejilla img {
+  width: 100%; /* Ancho completo */
+  height: 300px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+  display: block;
+}
+
+/* Estilos para la información de la imagen (más compacta) */
+.info-imagen {
+  padding: 0.25rem; /* Espaciado interno reducido */
+  display: flex;
+  justify-content: space-between; /* Espacio entre el autor y las acciones */
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: #fff; /* Fondo blanco */
+  flex-grow: 1; /* Asegura que el contenido ocupe el espacio restante */
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* Espacio entre el avatar y el nombre */
+}
+
+.autor i {
+  font-size: 1rem; /* Tamaño del ícono de avatar */
+  color: #666; /* Color del ícono */
+}
+
+.nombre-autor {
+  font-size: 0.7rem; /* Tamaño de la fuente */
+  font-weight: 500; /* Grosor de la fuente */
+  color: #333; /* Color del texto */
+}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre los íconos */
+}
+
+.like {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* Espacio entre el ícono y el texto */
+  font-size: 0.7rem; /* Tamaño de la fuente */
+  color: #666; /* Color del texto */
+}
+
+.like i {
+  color: #ea4c89; /* Color del ícono de like */
+  font-size: 0.8rem; /* Tamaño del ícono */
+  transition: transform 0.2s ease; /* Transición suave */
+}
+
+.like:hover i {
+  transform: scale(1.1); /* Efecto de escala al hacer hover */
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* Espacio entre el ícono y el texto */
+  font-size: 0.7rem; /* Tamaño de la fuente */
+  color: #666; /* Color del texto */
+}
+
+.views i {
+  color: #666; /* Color del ícono de views */
+  font-size: 0.8rem; /* Tamaño del ícono */
+}
+
+/* Footer */
+.footer {
+  background-color: #f9f9f9; /* Fondo del footer */
+  padding: 2rem 0; /* Espaciado interno */
+  border-top: 1px solid #e0e0e0; /* Borde superior */
+}
+
+/* Botón "Sign up to continue" */
+.signup-container {
+  text-align: center; /* Centra el botón */
+  margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+.signup-button {
+  background-color: black; /* Fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none; /* Elimina el borde */
+  padding: 0.75rem 2rem; /* Espaciado interno */
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al hacer hover */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.signup-button:hover {
+  background-color: gray; /* Cambia el fondo al hacer hover */
+}
+
+/* Carrusel de fotografías */
+.carousel {
+  overflow: hidden; /* Oculta el contenido que sobresale */
+  width: 100%; /* Ancho completo */
+  margin-bottom: 2rem; /* Espaciado inferior */
+  position: relative; /* Posicionamiento relativo */
+}
+
+.carousel-inner {
+  display: flex;
+  width: 200%; /* Doble del ancho para permitir el desplazamiento continuo */
+  animation: carousel 20s infinite linear; /* Animación del carrusel */
+}
+
+.carousel img {
+  width: 15%; /* Cada imagen ocupa el 15% del ancho del contenedor */
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+  flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+}
+
+/* Animación del carrusel */
+@keyframes carousel {
+  0% { transform: translateX(0); } /* Inicio de la animación */
+  100% { transform: translateX(-50%); } /* Desplaza el carrusel la mitad de su ancho */
+}
+
+/* Estilos para la sección de enlaces y redes sociales */
+.footer-links {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 1.5rem; /* Espacio entre elementos */
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  overflow-x: auto; /* Permite desplazamiento horizontal si no caben todos los elementos */
+  padding: 1rem 0; /* Espaciado interno */
+}
+
+.footer-logo {
+  width: 125px; /* Ancho del logo */
+  height: 50px; /* Altura del logo */
+}
+
+.footer-section {
+  flex: 0 0 auto; /* Evita que los elementos crezcan o se reduzcan */
+  padding-bottom: 5rem; /* Espaciado inferior */
+}
+
+.footer-section h4 {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 1rem; /* Tamaño de la fuente */
+}
+
+.footer-section h4 a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #333; /* Color del texto */
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+.footer-section h4 a:hover {
+  color: #ea4c89; /* Cambia el color al hacer hover */
+}
+
+/* Estilos para las redes sociales */
+.social-media {
+  display: flex;
+  gap: 1rem; /* Espacio entre íconos */
+  align-items: center; /* Centra verticalmente los íconos */
+}
+
+.social-media img {
+  width: 24px; /* Ancho de los íconos */
+  height: 24px; /* Altura de los íconos */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.social-media img:hover {
+  transform: scale(1.1); /* Efecto de escala al hacer hover */
+}
+
+/* Términos y enlaces adicionales */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  font-size: 0.9rem; /* Tamaño de la fuente */
+  color: #666; /* Color del texto */
+  border-top: 1px solid #e0e0e0; /* Borde superior */
+  padding-top: 1rem; /* Espaciado superior */
+}
+
+.footer-left {
+  display: flex;
+  gap: 1rem; /* Espacio entre elementos */
+}
+
+.footer-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #ea4c89;
+} 
